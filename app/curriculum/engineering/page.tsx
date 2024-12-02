@@ -5,8 +5,10 @@ export default function EngineeringPage() {
     return (
         <CurriculumArea
             title="Engineering Education in Early Childhood"
-            introduction="Engineering in early childhood fosters problem-solving skills, creativity, and an understanding of how things work. It involves hands-on activities that encourage children to explore, design, build, and test ideas, laying the foundation for critical thinking and innovation. Through play-based engineering challenges, children develop persistence, collaboration, and curiosity about the world around them."
-            perspectives="In early childhood education, engineering is seen as a way to integrate STEM learning into everyday experiences. Constructivist theories emphasize the role of exploration and discovery in learning, while Vygotsky's sociocultural theory highlights the importance of collaboration and guided interaction in engineering tasks. The Engineering Design Process is adapted for young learners, emphasizing the stages of asking, imagining, planning, creating, and improving to nurture problem-solving and resilience."
+            introduction="Engineering encourages children to apply their creative thinking to solve practical problems, fostering critical thinking, innovation, and teamwork. Within the EYLF, engineering activities support Outcome 4—Children are confident and involved learners—by encouraging children to experiment with materials, test ideas, and explore cause and effect. Engineering also plays a crucial role in developing fine motor skills and spatial awareness, as children build and design structures.
+Through activities such as building with blocks, designing simple machines, or engaging in engineering challenges, children learn to think critically and collaboratively, laying the foundation for innovation. These activities support Outcome 3—Children have a strong sense of well-being—as children build confidence and resilience by solving problems and overcoming challenges.
+"
+            perspectives="Engineering in early childhood education draws on the principles of design thinking, which encourages children to empathize, define problems, ideate, prototype, and test solutions. The EYLF embraces this process by fostering environments where children can engage in inquiry-based learning, experimentation, and collaboration. Piaget’s theory of cognitive development also supports engineering’s role in developing logical thinking and problem-solving skills in young children."
             resources={[
                 "Building blocks and construction sets (e.g., LEGO, magnetic tiles)",
                 "Recycled materials for open-ended building (e.g., cardboard, bottle caps)",
@@ -57,7 +59,7 @@ export default function EngineeringPage() {
                 },
             ]}
             ageGroupVideos={videoSources.physicalEducation}
-            criticalReflection="Implementing a comprehensive physical education program in early childhood has shown me the profound impact movement has on children's overall development. By providing a variety of structured and unstructured physical activities, I've observed improvements in children's coordination, confidence, and social skills. Integrating physical activities throughout the day, such as movement breaks during cognitive tasks or using active games to teach academic concepts, has enhanced engagement and learning across all areas of the curriculum. It's crucial to create an inclusive environment that celebrates diverse abilities and encourages all children to participate and enjoy physical activity. I've found that involving families and educating them about the importance of physical activity has helped reinforce healthy habits beyond the classroom."
+            criticalReflection="Through facilitating engineering activities, I’ve come to appreciate the importance of providing children with opportunities to experiment and create without fear of failure. By offering materials that encourage open-ended exploration, I am able to support children’s problem-solving abilities and their confidence in approaching challenges. This approach aligns with the EYLF principle of learning through play, where children’s curiosity drives their understanding of the world."
         />
     );
 }
