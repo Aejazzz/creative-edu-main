@@ -5,8 +5,10 @@ export default function LanguagePage() {
     return (
         <CurriculumArea
             title="Language in Early Childhood Education"
-            introduction="Language development is a crucial aspect of early childhood education, laying the foundation for literacy, communication, and cognitive growth. It encompasses listening, speaking, reading, and writing skills, which are essential for children's overall development and future academic success."
-            perspectives="In early childhood education, language development is viewed through various theoretical lenses. Chomsky's theory of language acquisition suggests an innate ability to learn language, while Vygotsky's sociocultural theory emphasizes the role of social interaction in language development. The emergent literacy approach highlights the importance of a print-rich environment and meaningful literacy experiences."
+            introduction="Language and literacy are essential tools for creativity, enabling children to communicate their ideas, express emotions, and connect with others. Within the EYLF, these areas are integral to Outcome 5—Children are effective communicators. Through storytelling, imaginative play, and writing activities, children develop skills in listening, speaking, reading, and writing, fostering creativity and critical thinking.
+The EYLF recognizes that language and literacy also play a crucial role in building cultural awareness and inclusion. Activities such as shared reading, creating stories, and exploring diverse texts provide children with opportunities to connect with their community and the wider world, supporting Outcome 2—Children are connected with and contribute to their world.
+"
+            perspectives="The creative aspect of language and literacy aligns with Vygotsky’s emphasis on the role of language in cognitive development. Piaget’s constructivist theory also supports the view that children construct knowledge through active exploration and interaction with texts. The EYLF emphasizes holistic approaches, where literacy is embedded in meaningful, play-based experiences that inspire creativity and engagement."
             resources={[
                 "Age-appropriate books in various genres",
                 "Puppets and props for storytelling",
@@ -57,7 +59,7 @@ export default function LanguagePage() {
                 },
             ]}
             ageGroupVideos={videoSources.language}
-            criticalReflection="Implementing a rich language curriculum has shown me the incredible capacity young children have for language acquisition and creativity. By providing a print-rich environment and engaging children in meaningful conversations throughout the day, I've seen significant improvements in vocabulary, comprehension, and communication skills. Integrating language activities across all areas of the curriculum, such as discussing scientific observations or describing mathematical patterns, has created more holistic learning experiences. It's crucial to celebrate linguistic diversity and support children's home languages while fostering English language development. I've found that using technology thoughtfully, such as interactive storytelling apps, can enhance engagement and provide additional language support when used in moderation alongside traditional methods."
+            criticalReflection="Facilitating creativity in language and literacy has enhanced my understanding of how stories and texts shape children’s learning journeys. Encouraging children to create their own narratives has deepened my ability to foster confidence and a love of learning. This reflective practice aligns with the EYLF principle of ongoing learning and reflective practice, inspiring me to continually adapt my teaching strategies to meet the diverse needs of young learners."
         />
     );
 }
