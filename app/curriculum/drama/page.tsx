@@ -5,8 +5,11 @@ export default function DramaPage() {
     return (
         <CurriculumArea
             title="Drama in Early Childhood Education"
-            introduction="Drama plays a vital role in fostering creativity, emotional intelligence, and social skills in young children. It provides a platform for children to explore different roles, express themselves, and develop their imagination."
-            perspectives="In early childhood education, drama is viewed as a powerful tool for learning and development. Theories such as Vygotsky's sociocultural theory emphasize the importance of dramatic play in cognitive and social development. The Reggio Emilia approach also highlights the role of dramatic arts in children's learning and self-expression."
+            introduction="Drama and puppetry are integral to the EYLF’s vision of fostering creativity, communication, and social-emotional development in young children. Through role-play and storytelling, children develop the skills to navigate relationships, understand different perspectives, and express their ideas. These activities contribute to Outcome 2—Children are connected with and contribute to their world—by encouraging collaboration and empathy, as well as Outcome 5—Children are effective communicators, by building language and storytelling abilities.
+
+Drama enables children to explore their emotions and solve problems creatively, while puppetry offers a medium for even the most reserved learners to share their thoughts and feelings. Together, they help children build confidence, resilience, and a sense of belonging.
+"
+            perspectives="Drama and puppetry reflect Vygotsky’s sociocultural theory, emphasizing the role of social interaction and cultural practices in learning. Piaget’s constructivist theory also underpins these activities, recognizing the importance of hands-on experiences in fostering creative and cognitive development. The EYLF supports these perspectives by advocating for play-based learning, where children actively construct meaning through imaginative activities."
             resources={[
                 "Dress-up clothes and props",
                 "Puppets and puppet theaters",
@@ -57,7 +60,7 @@ export default function DramaPage() {
                 },
             ]}
             ageGroupVideos={videoSources.drama}
-            criticalReflection="Reflecting on my teaching practices, I've observed that incorporating drama activities has significantly enhanced children's confidence, empathy, and problem-solving skills. By providing opportunities for dramatic play and performance, children learn to express themselves more effectively and understand others' perspectives. I've found that integrating drama with other curriculum areas, such as using role-play to explore historical events or scientific concepts, has led to more engaging and memorable learning experiences."
+            criticalReflection="In incorporating drama and puppetry, I have learned to value the EYLF principle of ongoing learning and reflective practice. Observing children’s engagement in these activities has taught me to adapt my strategies to meet their interests and developmental needs. By designing inclusive scenarios and encouraging collaboration, I’ve enhanced my ability to support creativity, confidence, and empathy in young learners."
         />
     );
 }
