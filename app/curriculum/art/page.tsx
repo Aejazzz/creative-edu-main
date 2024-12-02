@@ -5,8 +5,11 @@ export default function ArtPage() {
     return (
         <CurriculumArea
             title="Art in Early Childhood Education"
-            introduction="Art plays a crucial role in fostering creativity and self-expression in young children. It provides a medium for children to explore their imagination, develop fine motor skills, and communicate their thoughts and feelings."
-            perspectives="In early childhood education, art is viewed as a process rather than a product. Theories such as Reggio Emilia emphasize the importance of allowing children to explore materials freely and express themselves without rigid guidelines. Vygotsky's sociocultural theory also highlights the role of art in cognitive development and cultural learning."
+            introduction="Art plays a fundamental role in fostering creativity as emphasized by the EYLF. It provides children with opportunities to express themselves, explore their identities, and connect with the world around them. Through drawing, painting, and other forms of artistic expression, children develop a sense of agency and individuality. The EYLF Outcome 4—Children are confident and involved learners—highlights the importance of creativity in promoting problem-solving, experimentation, and innovation.
+
+Incorporating art into early childhood education aligns with Outcome 5—Children are effective communicators, as children use various artistic media to share their ideas, thoughts, and feelings. Artistic activities also encourage cultural awareness and inclusivity, fostering respect for diversity through collaborative projects and cultural exploration.
+"
+            perspectives="Art in early childhood education reflects Vygotsky’s sociocultural theory, which suggests that creativity develops through social interaction and the use of cultural tools. The EYLF also acknowledges the importance of cultural context in shaping children’s learning, encouraging educators to integrate diverse artistic practices. Gardner’s multiple intelligences theory supports this, emphasizing visual-spatial intelligence as a vital dimension of creativity, helping children make meaning from their experiences."
             resources={[
                 "Various art materials (paints, crayons, clay, paper)",
                 "Digital drawing apps for tablets",
@@ -56,7 +59,7 @@ export default function ArtPage() {
             //     type: "video",
             //     src: "/videos/art-implementation.mp4",
             // }}
-            criticalReflection="Reflecting on my teaching practices, I've found that providing open-ended art experiences has significantly enhanced creativity in my classroom. By focusing on the process rather than the end product, children feel more confident in expressing themselves. I've also noticed that integrating art with other curriculum areas, such as using painting to explore science concepts, has led to deeper, more engaging learning experiences."
+            criticalReflection="In facilitating art activities, I have gained a deeper understanding of the importance of process over product, as supported by the EYLF principles of respect for diversity and high expectations and equity. Providing children with open-ended materials has reinforced my ability to nurture their creativity, encouraging exploration and self-expression. This practice has also enhanced my skills in creating inclusive environments where every child feels valued and capable of contributing their unique perspective."
         />
     );
 }
