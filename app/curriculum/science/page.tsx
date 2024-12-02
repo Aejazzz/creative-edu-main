@@ -5,8 +5,10 @@ export default function SciencePage() {
     return (
         <CurriculumArea
             title="Emotional Intelligence in Early Childhood Education"
-            introduction="Emotional intelligence in early childhood education focuses on helping children recognize, understand, and manage their emotions, as well as develop empathy and social skills. It is crucial for personal well-being, forming positive relationships, and future academic and life success."
-            perspectives="In early childhood education, emotional intelligence is informed by various theories and approaches. Goleman's Emotional Intelligence framework emphasizes self-awareness, self-regulation, motivation, empathy, and social skills. The CASEL (Collaborative for Academic, Social, and Emotional Learning) framework provides a comprehensive approach to social-emotional learning. Attachment theory underscores the importance of secure relationships in emotional development."
+            introduction="Science fosters curiosity, problem-solving, and exploration, making it a key element in the EYLF. Through hands-on experiments, observations, and investigations, children explore the natural world, learning to ask questions and test hypotheses. Science activities support Outcome 4—Children are confident and involved learners, by encouraging children to engage in critical thinking and active experimentation.
+By exploring scientific concepts such as cause and effect, measurement, and change, children develop a deep sense of inquiry and wonder. The EYLF Outcome 2—Children are connected with and contribute to their world—is supported as children investigate the environment, engage in sustainability practices, and learn about the world around them.
+"
+            perspectives="The role of creativity in science is supported by Piaget’s constructivist theory, where children’s active engagement in the discovery process fosters problem-solving and cognitive development. Vygotsky’s sociocultural theory also highlights the importance of collaborative exploration and guided interaction in scientific learning. The EYLF encourages educators to provide rich, stimulating environments where children’s scientific creativity is nurtured through inquiry-based learning."
             resources={[
                 "Emotion cards and posters",
                 "Puppets and dolls for role-playing",
@@ -57,7 +59,7 @@ export default function SciencePage() {
                 },
             ]}
             ageGroupVideos={videoSources.emotionalIntelligence}
-            criticalReflection="Implementing a focus on emotional intelligence in early childhood education has had a profound impact on the overall classroom environment and individual child development. By explicitly teaching and modeling emotional awareness and regulation strategies, I've observed significant improvements in children's ability to express their feelings appropriately, resolve conflicts, and show empathy towards others. Integrating emotional intelligence across the curriculum, such as discussing characters' feelings in literature or exploring emotions through art, has deepened learning experiences. It's crucial to create a safe, supportive environment where all emotions are acknowledged and children feel comfortable expressing themselves. Collaborating with families to reinforce emotional intelligence skills at home has been key to supporting children's overall social-emotional development. Moving forward, I aim to further explore how to support children in developing resilience and coping with more complex emotions and situations."
+            criticalReflection="Facilitating science-based creative activities has enhanced my ability to foster curiosity and a love for exploration in young children. By providing opportunities for hands-on experiments, I can support children’s ability to think critically, make predictions, and test their ideas. This aligns with the EYLF principle of high expectations and equity, as I am committed to ensuring that all children, regardless of their background or abilities, have equal opportunities to engage in scientific inquiry."
         />
     );
 }
