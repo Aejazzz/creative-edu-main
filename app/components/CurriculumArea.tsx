@@ -92,36 +92,72 @@ const CurriculumArea: React.FC<CurriculumAreaProps> = ({
             <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
+                transition={{ duration: 0.5, delay: 1.2 }}
                 className="bg-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-3xl font-semibold mb-4 flex items-center">
-                    <Palette className="mr-2 text-green-500" /> Perspectives on
-                    Creativity
+                <Video className="mr-2 text-red-500" />
+                    Creative
+                    Learning Opportunities
                 </h2>
-                <p className="text-lg">{perspectives}</p>
-            </motion.section>
-
-            <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
-                className="bg-white p-6 rounded-lg shadow-lg">
-                <h2 className="text-3xl font-semibold mb-4 flex items-center">
-                    <Book className="mr-2 text-blue-500" /> Resources & Digital
-                    Tools
-                </h2>
-                <ul className="list-none pl-5 space-y-2 text-lg">
-                    {resources.map((resource, index) => (
-                        <motion.li
-                            key={index}
-                            className="flex items-center"
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3, delay: index * 0.1 }}>
-                            <Star className="mr-2 text-yellow-500" /> {resource}
-                        </motion.li>
+                <div className="flex flex-wrap justify-center space-x-4 mb-6">
+                    {Object.keys(ageGroupVideos).map((ageGroup) => (
+                        <motion.button
+                            key={ageGroup}
+                            className={`px-4 py-2 rounded-full mb-2 text-white font-bold transition-colors duration-300 ${
+                                activeCreativeTab === ageGroup
+                                    ? "bg-gradient-to-r from-purple-500 to-blue-500"
+                                    : "bg-gray-400 hover:bg-gray-500"
+                            }`}
+                            onClick={() =>
+                                handleTabChange(ageGroup, "creative")
+                            }
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}>
+                            {ageGroup} years
+                        </motion.button>
                     ))}
-                </ul>
+                </div>
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeCreativeTab}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}>
+                
+                        <iframe
+                            src={ageGroupVideos[activeCreativeTab]}
+                            width="560"
+                            height="315"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; accelerometer"
+                            allowFullScreen
+                            className="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6"></iframe>
+                        {creativeActivities
+                            .filter(
+                                (activity) =>
+                                    activity.ageGroup === activeCreativeTab
+                            )
+                            .map((activity, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="mb-6 bg-gradient-to-r from-pink-100 to-blue-100 p-6 rounded-lg shadow-md"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.3,
+                                        delay: index * 0.1,
+                                    }}>
+                                    <h3 className="text-2xl font-semibold mb-2 text-purple-600">
+                                        {activity.title}
+                                    </h3>
+                                    <p className="text-lg">
+                                        {activity.description}
+                                    </p>
+                                </motion.div>
+                            ))}
+                    </motion.div>
+                </AnimatePresence>
             </motion.section>
 
             <motion.section
@@ -179,88 +215,41 @@ const CurriculumArea: React.FC<CurriculumAreaProps> = ({
             <motion.section
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.2 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
                 className="bg-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-3xl font-semibold mb-4 flex items-center">
-                <Video className="mr-2 text-red-500" />
-                    Creative
-                    Learning Opportunities
+                    <Palette className="mr-2 text-green-500" /> Perspectives on
+                    Creativity
                 </h2>
-                <div className="flex flex-wrap justify-center space-x-4 mb-6">
-                    {Object.keys(ageGroupVideos).map((ageGroup) => (
-                        <motion.button
-                            key={ageGroup}
-                            className={`px-4 py-2 rounded-full mb-2 text-white font-bold transition-colors duration-300 ${
-                                activeCreativeTab === ageGroup
-                                    ? "bg-gradient-to-r from-purple-500 to-blue-500"
-                                    : "bg-gray-400 hover:bg-gray-500"
-                            }`}
-                            onClick={() =>
-                                handleTabChange(ageGroup, "creative")
-                            }
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}>
-                            {ageGroup} years
-                        </motion.button>
-                    ))}
-                </div>
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={activeCreativeTab}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3 }}>
-                        {/* <video
-                            controls
-                            className="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6">
-                            <source
-                                src={ageGroupVideos[activeCreativeTab]}
-                                type="video/mp4"
-                            />
-                            <track
-                                kind="captions"
-                                src={`/captions/${activeCreativeTab}.vtt`}
-                                srcLang="en"
-                                label="English"
-                            />
-                            Your browser does not support the video tag.
-                        </video> */}
-
-                        <iframe
-                            src={ageGroupVideos[activeCreativeTab]}
-                            width="560"
-                            height="315"
-                            frameborder="0"
-                            allow="autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; accelerometer"
-                            allowFullScreen
-                            className="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6"></iframe>
-                        {creativeActivities
-                            .filter(
-                                (activity) =>
-                                    activity.ageGroup === activeCreativeTab
-                            )
-                            .map((activity, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="mb-6 bg-gradient-to-r from-pink-100 to-blue-100 p-6 rounded-lg shadow-md"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{
-                                        duration: 0.3,
-                                        delay: index * 0.1,
-                                    }}>
-                                    <h3 className="text-2xl font-semibold mb-2 text-purple-600">
-                                        {activity.title}
-                                    </h3>
-                                    <p className="text-lg">
-                                        {activity.description}
-                                    </p>
-                                </motion.div>
-                            ))}
-                    </motion.div>
-                </AnimatePresence>
+                <p className="text-lg">{perspectives}</p>
             </motion.section>
+
+            <motion.section
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="bg-white p-6 rounded-lg shadow-lg">
+                <h2 className="text-3xl font-semibold mb-4 flex items-center">
+                    <Book className="mr-2 text-blue-500" /> Resources & Digital
+                    Tools
+                </h2>
+                <ul className="list-none pl-5 space-y-2 text-lg">
+                    {resources.map((resource, index) => (
+                        <motion.li
+                            key={index}
+                            className="flex items-center"
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.3, delay: index * 0.1 }}>
+                            <Star className="mr-2 text-yellow-500" /> {resource}
+                        </motion.li>
+                    ))}
+                </ul>
+            </motion.section>
+
+          
+
+          
 
             <motion.section
                 initial={{ opacity: 0, y: 20 }}

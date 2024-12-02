@@ -13,7 +13,7 @@ const Footer = () => {
                     initial={{ y: 20 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}>
-                    &copy; {new Date().getFullYear()} CreativeEdu. All rights
+                    &copy; {new Date().getFullYear()}  Puja Susling. All rights
                     reserved.
                 </motion.p>
                 <motion.nav

@@ -42,17 +42,14 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="text-center staggered-animation">
+            <section className="text-center staggered-animation px-8">
                 <h2 className="text-3xl font-semibold mb-6">
                     Introduction
                 </h2>
-                <p className="text-xl max-w-2xl mx-auto">
+                <p className="text-xl  mx-auto text-justify">
                 Welcome to our exploration of creativity in early childhood education. Creativity is at the heart of learning, empowering young minds to explore, imagine, and innovate. In early childhood, fostering creativity nurtures curiosity, problem-solving, and critical thinking—skills essential for lifelong learning and adaptation in an ever-changing world.
-
 Creativity in the curriculum goes beyond art and craft. It encompasses drama, music, movement, storytelling, and STEM (Science, Technology, Engineering, Mathematics). When integrated thoughtfully, these areas inspire children to express themselves, connect with others, and engage deeply with their surroundings.
-
 Early childhood educators play a pivotal role in facilitating this journey. By designing purposeful, open-ended activities and providing stimulating materials, they create environments where children can explore their unique ideas and talents. This website will guide you through various curriculum areas, exploring their significance in fostering creativity and offering insights, examples, and original learning opportunities tailored to children’s developmental stages.
-
 Join us as we delve into the world of imaginative play, innovative thinking, and joyful discovery in early childhood education!
                 </p>
             </section>
